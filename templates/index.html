@@ -61,6 +61,85 @@
             background-color: #DC143C;
             border-radius: 4px;
         }
+        .button {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: block;
+            width: 200px;
+            font-size: 1.5em;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: #DC143C;
+            border-radius: 4px;
+            position: static;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+  cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  color: (internal value);
+}
+
+.menu
+			{
+				list-style:none;
+				margin:0; padding:0;
+			}
+			
+			.menu li
+			{
+				float:left;
+				margin:5px;
+                width: 200px;
+			}
+			
+			.menu a
+			{
+				text-decoration:none;
+				color:rgb(251, 251, 251);
+				font-weight:bold;
+				border:1px solid rgb(28, 28, 29);
+				border-top:5px solid rgb(203, 43, 43);
+				background:#ccc;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+				width:250px;
+				display:block;
+				line-height:25px;
+				padding:5px;
+				text-align:center;
+
+                width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            
+            
+            font-size: 1.5em;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: #DC143C;
+            border-radius: 4px;
+			}
+			
+			.menu a:hover
+			{
+				
+				color:rgb(14, 9, 11);
+			}
     </style>
 </head>
 
@@ -68,10 +147,13 @@
 
     <div class="hero-image">
         <div class="hero-text">
-            <h1 style="font-size:50px">Mermer Sınıflandırma</h1>
+            <h1 style="font-size:50px">Mermer İşlemleri</h1>
             <h3>Sonucu görmek için fotoğraf yükleyiniz! </h3>
             <form method='post' enctype=multipart/form-data> <input type="file" name="file">
-                <input type="submit" value="upload">
+                <input type="submit" value="Yükle">
+                <ul class="menu">
+                    <li><a href="/">Geri Dön...</a></li></ul>
+            </form></div></div>
 </body>
 
 </html>

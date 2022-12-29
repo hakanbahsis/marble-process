@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Mermer Sınıflandırma App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+            background-color: #cccccc;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        .menu
+			{
+				list-style:none;
+				margin:0; padding:0;
+			}
+			
+			.menu li
+			{
+				float:left;
+				margin:5px;
+                width: 700px;
+			}
+			
+			.menu a
+			{
+				text-decoration:none;
+				color:rgb(251, 251, 251);
+				font-weight:bold;
+				border:1px solid rgb(28, 28, 29);
+				border-top:5px solid rgb(203, 43, 43);
+				background:#ccc;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+				width:250px;
+				display:block;
+				line-height:25px;
+				padding:5px;
+				text-align:center;
+
+                width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            
+            
+            font-size: 1.5em;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: #DC143C;
+            border-radius: 4px;
+			}
+			
+			.menu a:hover
+			{
+				
+				color:rgb(14, 9, 11);
+			}
+    </style>
+</head>
+
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+            <img src="static/uploads/images/{{ path }}" alt="Input Image" width="550" height="550">
+            <h3>Sınıf : {{sinif}}</h3>
+            <ul class="menu">
+                <li><a href="/">Geri Dön...</a></li></ul>
+        </div>
+    </div>
+</body>
+
+</html> 
